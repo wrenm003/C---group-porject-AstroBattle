@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="21" height="15" tilewidth="32" tileheight="32" backgroundcolor="#000000">
+ <properties>
+  <property name="bullet" value="assets/bullet.png"/>
+  <property name="numbers" value="assets/numbers.png"/>
+  <property name="pbullet" value="assets/pbullet.png"/>
+  <property name="player" value="assets/player.png"/>
+  <property name="player1" value="assets/player1.png"/>
+ </properties>
+ <tileset firstgid="1" name="Blocks" tilewidth="32" tileheight="32" spacing="2" margin="2">
+  <image source="blocks1.png" width="614" height="376"/>
+ </tileset>
+ <tileset firstgid="199" name="Blocks2" tilewidth="32" tileheight="32" spacing="2" margin="2">
+  <image source="blocks2.png" width="614" height="376"/>
+ </tileset>
+ <imagelayer name="Image Layer 1" width="21" height="15">
+  <image source="back.jpg"/>
+ </imagelayer>
+ <layer name="Ground" width="21" height="15">
+  <properties>
+   <property name="collidable" value=""/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjILhDwAE7AAB
+  </data>
+ </layer>
+ <layer name="ForegroundBehind" width="21" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUDHZwH4gfAPFDAmKkgI9A/AmIPxMQIwUwMzIwsDASFiMEfiOxfwGxGFD/DyQxUUaI2Hcg+xkQP4Wqk2CEsEH6v0PFfkH1AAAvKxbQ
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="21" height="15">
+  <object name="Player" type="Player" x="5" y="443" width="46" height="34">
+   <properties>
+    <property name="numFrames" value="2"/>
+    <property name="textureHeight" value="46"/>
+    <property name="textureID" value="player"/>
+    <property name="textureWidth" value="65"/>
+   </properties>
+  </object>
+  <object name="Player1" type="Enemy" x="590" y="442" width="46" height="34">
+   <properties>
+    <property name="numFrames" value="2"/>
+    <property name="textureHeight" value="46"/>
+    <property name="textureID" value="player1"/>
+    <property name="textureWidth" value="65"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="ForegroundInfront" width="21" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUDFUgwTjQLoAAf6A7AqjsllageW1UNBMA2gcByA==
+  </data>
+ </layer>
+</map>
